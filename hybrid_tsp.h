@@ -26,7 +26,7 @@ using DistMatrix = std::vector<std::vector<double>>;
 using TrotterSlices = std::vector<TourMatrix>;
 
 // ============================================================================
-// Basic Structures (from main2.cpp)
+// Basic Structures 
 // ============================================================================
 
 struct Point {
