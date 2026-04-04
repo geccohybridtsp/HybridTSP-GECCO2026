@@ -21,12 +21,5 @@ clean:
 debug: CXXFLAGS += -g -DDEBUG -O0
 debug: clean $(TARGET)
 
-# Run with default test
-test: $(TARGET)
-	./$(TARGET) ../data/berlin52.tsp --pool-size 20 --patience 5
-
-# Run on larger instance
-test-large: $(TARGET)
-	./$(TARGET) ../data/pr264.tsp --pool-size 30 --patience 10
 
 .PHONY: all clean debug test test-large
